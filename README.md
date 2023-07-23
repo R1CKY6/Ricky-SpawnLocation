@@ -1,5 +1,5 @@
 # Ricky-SpawnLocation
-Advanced Spawn Location| FiveM
+Advanced Spawn Location | FiveM
 
 # Discord
 https://discord.gg/tHAbhd94vS
