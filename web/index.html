@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+        <div id="app">
+            <div class="whitespawn"></div>
+            <div class="title">SPAWN</div>
+            <div class="title2">LOCATION</div>
+            <div class="bg"></div>
+            <div class="map"></div>
+
+            <div @click="updateSpawnSelected(v)" v-for="v in point" v-bind:style="setPoint(v)" class="point"></div>
+
+            <div v-bind:style="updateImage(spawnSelected.image)" v-if="spawnSelected != false" class="infoSpawn">
+            </div>
+            <div v-if="spawnSelected != false" @click="spawn()" class="spawn"><span>SPAWN</span></div>
+        </div>
+        
+
+        <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js'></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

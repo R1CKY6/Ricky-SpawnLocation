@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(../fonts/proxima_nova.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Proxima Nova';
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    overflow: hidden;
+}
+
+
+#app {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(63.56% 152.1% at 51.88% 65.97%, #000000 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+
+.map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/background.png');
+    opacity: 30%;
+}
+
+.bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/bg.png');
+}
+
+.title {
+    position: absolute;
+    left: 4.8148vh;
+    top: 2.2222vh;
+    font-size: 4.6296vh;
+    z-index: 10;
+}
+
+.title2 {
+    position: absolute;
+    left: 4.8148vh;
+    top: 6.8519vh;
+    font-size: 6.4815vh;
+    z-index: 10;
+    color: #FF3939;
+}
+
+
+.whiteSpawn {
+    position: absolute;
+    height: 6.5741vh;
+    width: 0.9259vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/white_spawn.png');
+    top: 3.6111vh;
+    left: 1.7593vh;
+    z-index: 10;
+}
+
+.point {
+    position: absolute;
+    height: 8.7963vh;
+    width: 8.7963vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/point.png');
+}
+
+.point:hover {
+    cursor: pointer;
+}
+
+.infoSpawn {
+    position: absolute;
+    height: 20.9815vh;
+    width: 32.5926vh;
+    top: 18.2407vh;
+    left: 3.5185vh;
+    border-radius: 0.9259vh 0.9259vh 0vh 0vh;
+}
+
+.spawn {
+    position: absolute;
+    height: 5.5556vh;
+    width: 32.5926vh;
+    top: 40.7407vh;
+    left: 3.5185vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/spawn_button.png');
+}
+
+
+.spawn:hover,
+.infoSpawn:hover {
+    cursor: pointer;
+}
+
+
+.spawn span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+}
