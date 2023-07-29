@@ -18,6 +18,7 @@ RegisterNUICallback('spawn', function(data, cb)
    SetEntityHeading(ped, heading)
    DoScreenFadeIn(500)
    SetNuiFocus(false, false)
+   TriggerEvent('ricky-client:chooseSpawnLocation')
 end)
 
 OpenMenu = function()
